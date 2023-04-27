@@ -1,0 +1,161 @@
+header {
+    background-color: #2CA8DE;
+    color: black;
+}
+
+.mainmenubtn {
+    background-color: skyblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;
+
+
+}
+li {
+    float: left;
+}
+
+li {
+    float: left;
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+li.dropdown {
+    display: inline-block;
+    font-size: 20px;
+    padding: 15px 0px;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+
+
+
+  
+}
+
+.dropdown-child {
+    display: inline;
+    background-color: skyblue;
+    min-width: 200px;
+}
+
+.dropdown-child a {
+    color: blue;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+
+
+
+
+.integrantes-div { text-align: center; }
+
+
+.integrantes-imagem { width: 20%; }
+
+
+.conteudo-imagem { width: 20%;}
+
+.texto-equipe { margin-top: 10%;
+  background-color:; }
+
+ .flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #bbdefb;
+    height: 100%;
+    padding: 15px;
+    gap: 5px;
+  }
+
+  .flex-container {
+    background: #ffecb3;
+    border: 3px solid #ffcc80;
+    border-radius: 5px;
+    padding: 8px;
+  }
+
+ .flex-container {
+
+    display: flex;
+    
+    justify-content: space-evenly; 
+    align-items: center;    
+
+    background-color: #bbdefb;
+    height: 100%;
+    padding: 15px;
+    gap: 5px;
+
+  }
+
+  .flex-container > div{
+    background: #ffecb3;
+    border: 3px solid #ffcc80;
+    border-radius: 5px;
+    padding: 8px;
+  }
+
+.cabecalho-imagem{
+ text-align: left;
+width: 150px
+
+}
+
+.cabecalho{
+    background-color rgb (0,191,255);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    font-family: 'Ubuntu', sans-serif;
+
+}
