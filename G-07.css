@@ -61,6 +61,22 @@ li.dropdown {
     display: flex;
     align-items: center;
 }
+li {
+    float: left;
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    color: #0500A5;
+}
 
 .dropdown-content {
     display: none;
