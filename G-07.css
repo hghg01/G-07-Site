@@ -42,7 +42,27 @@ li.dropdown {
     font-size: 20px;
     padding: 15px 0px;
 }
-
+.fim {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    align-items: center;
+}
+.fim-img {
+    width: 5%;
+}
+.fim-texto {
+    padding-left: 2%;
+    width: 20%;
+    text-align: justify;
+}
+.fim-info {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
 
 .dropdown-content {
     display: none;
