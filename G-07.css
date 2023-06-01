@@ -160,11 +160,11 @@ width: 150px
 
 }
 
-.form{ 
-    background: #ffecb3;
-    border: 3px solid #ffcc80;
-    border-radius: 5px;
-    padding: 8px;
+.StripeElement:focus {
+  background-color: white;
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: gray;
+  outline-offset: -1px;
     
 }
-    
