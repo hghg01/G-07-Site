@@ -160,11 +160,11 @@ width: 150px
 
 }
 
-.simple-contact-form {
-  background-color: blue;
-  outline-style: solid;
-  outline-width: thin;
-  outline-color: red;
-  outline-offset: -1px;
+.StripeElement {
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0.75em 1rem;
+  margin-bottom: 1.5rem;
     
 }
