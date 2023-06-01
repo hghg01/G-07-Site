@@ -159,3 +159,12 @@ width: 150px
     font-family: 'Ubuntu', sans-serif;
 
 }
+
+.form{ 
+    background: #ffecb3;
+    border: 3px solid #ffcc80;
+    border-radius: 5px;
+    padding: 8px;
+    
+}
+    
