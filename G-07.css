@@ -160,7 +160,7 @@ width: 150px
 
 }
 
-.StripeElement:focus {
+.form{
   background-color: white;
   outline-style: solid;
   outline-width: thin;
