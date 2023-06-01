@@ -161,10 +161,10 @@ width: 150px
 }
 
 .simple-contact-form {
-  background-color: white;
+  background-color: blue;
   outline-style: solid;
   outline-width: thin;
-  outline-color: gray;
+  outline-color: red;
   outline-offset: -1px;
     
 }
