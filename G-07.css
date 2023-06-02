@@ -74,7 +74,7 @@
 
 .alunos-div {
     text-align: center;
-    padding: 50px 0;
+    padding: 50px 50;
 }
 
 .alunos-todos {
@@ -83,7 +83,7 @@
 }
 
 .alunos-fotos {
-    width: 100px;
+    width: 120px;
     padding: 0px 0px 20px ;
 }
 
