@@ -299,7 +299,9 @@ input[type=submit] {
 .corpinho-div {
     background-color: rgb(26, 31, 48);
     color: white;
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 16px;
     justify-content: center;
     align-items: center;
     padding: 30px 0;
