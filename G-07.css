@@ -295,3 +295,13 @@ input[type=submit] {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
 }
+
+.corpinho-div {
+    background-color: rgb(26, 31, 48);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    
+    {
