@@ -1,9 +1,10 @@
+
 * {
     margin: 0;
     padding: 0;
 }
 
-.cabecalho {
+.cabeçalho {
     background-color: rgb(45, 52, 75);
     color: white;
     display: flex;
@@ -16,12 +17,11 @@
     align-items: center;
 }
 
-.cabecalho-imagem {
+.cabeçalho-imagem {
     width: 80px;
     border-radius: 50%;
     padding: 5px 5px;
     height: auto;
-     background-color: rgb(26, 31, 48);
 }
 
 .foto-corpo {
@@ -39,7 +39,7 @@
     padding: 30px 0;
 }
 
-.cabecalho-lista-item {
+.cabeçalho-lista-item {
     display: inline-block;
     margin: 0 25px;
     font-size: 20px;
@@ -65,211 +65,4 @@
     font-family: 'Ubuntu', sans-serif;
     color: white;
     text-align: center;
-    padding: 25px 0;
-    background: #181818;
-}
-
-.quem-somos-titulo a {
-    text-align: center;
-}
-
-.alunos-div {
-    text-align: center;
-    padding: 50px 50;
-}
-
-.alunos-todos {
-    text-aligh: center;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-}
-
-.alunos-fotos {
-    width: 120px;
-    padding: 0px 0px 20px ;
-     text-aligh: center;
-    
-}
-
-.roda-pé {
-    background-color: black;
-    justify-content: center;
-    ;
-}
-
-.nome-aluno {
-    padding: 0px 0px 20px 0px;
-}
-
-.roda-pé-imagem {
-    width: 40px;
-    border-radius: 50%;
-    padding: 0px 30px;
-}
-
-.roda-pé-texto {
-    margin: 10px 0px 5px 0px;
-    color: white;
-}
-
-li {
-    float: left;
-}
-
-
-li a,
-.dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover,
-.dropdown:hover .dropbtn {
-    background-color: rgb(0, 0, 0);
-}
-
-li.dropdown {
-    display: inline-block;
-    font-size: 20px;
-    padding: 15px 0px;
-    margin-left: 25px;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-
-}
-
-.fim {
-    text-align: center;
-    color: white;
-    line-height: 2.5;
-}
-
-.meio {
-    display: flex;
-    justify-content: center;
-}
-
-.pesquisa {
-
-    background-color: rgb(45, 52, 75);
-    text-align: center;
-    padding: 120px 0 30px 0;
-}
-
-.search-pesquisa {
-    background-color: white;
-    border: 1px solid #181818;
-    color: var(--branco);
-    border-radius: 24px;
-    padding: 1em;
-    text-align: center;
-    width: 82%;
-}
-
-.search-pesquisa::placeholder {
-    font-size: 14px;
-    font-weight: 400;
-    text-align: center;
-    color: black;
-    background: url("Lupa.svg") no-repeat;
-    background-position: 1em;
-}
-
-.lado {
-    display: flex;
-    align-items: center;
-
-}
-
-.field {
-    width: 100%;
-    margin: 15px 0;
-}
-
-.lado_1 {
-    padding: 0 20px 0 100px;
-}
-
-.lado_2 {
-    margin: 0 80px 0;
-}
-
-.formulario {
-    background-color: rgb(26, 31, 48);
-    padding: 20px;
-    color: white;
-}
-
-.formulario p {
-    width: 100%;
-    font-size: 1.5em;
-    text-align: center;
-}
-
-.field label,
-.field span {
-    padding: 10px;
-    font-size: 1.1em;
-    display: block;
-    width: 100%;
-}
-
-input[type=text],
-input[type=email],
-textarea {
-    width: 100%;
-    padding: 10px;
-    height: 30px;
-    line-height: 30px;
-    border-radius: 15px;
-    border: 1px solid #ccc;
-    outline: none;
-    width: 270px;
-}
-
-.mensagem {
-    line-height: 20px;
-    padding: 10px;
-    height: 110px;
-    resize: none;
-    width: 100%;
-}
-
-input[type=submit] {
-    display: block;
-    background-color: #ccc;
-    height: 35px;
-    border: none;
-    outline: 0;
-    cursor: pointer;
-    width: 100px;
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 15px;
-}
+    padding:
