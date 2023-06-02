@@ -282,7 +282,7 @@ input[type=submit] {
     background: #181818;
 }
 
-funcoes-titulo a {
+.funcoes-titulo a {
     text-align: center;
 }
 
@@ -294,4 +294,12 @@ funcoes-titulo a {
 .grupo-todos {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
+}
+
+.cabecalho {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    background: #181818;
 }
