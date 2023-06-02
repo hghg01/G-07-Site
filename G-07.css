@@ -311,5 +311,5 @@ input[type=submit] {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 10px;
 }
