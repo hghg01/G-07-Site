@@ -78,6 +78,7 @@
 }
 
 .alunos-todos {
+    text-aligh: center;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
 }
@@ -85,6 +86,8 @@
 .alunos-fotos {
     width: 120px;
     padding: 0px 0px 20px ;
+     text-aligh: center;
+    
 }
 
 .roda-pé {
