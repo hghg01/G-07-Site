@@ -295,11 +295,3 @@ input[type=submit] {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
 }
-
-.cabecalho1 {
-    font-family: 'Ubuntu', sans-serif;
-    color: white;
-    text-align: center;
-    padding: 25px 0;
-    background: #181818;
-}
