@@ -273,3 +273,25 @@ input[type=submit] {
     text-align: center;
     border-radius: 15px;
 }
+
+#funcoes {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    background: #181818;
+}
+
+funcoes-titulo a {
+    text-align: center;
+}
+
+.grupo-div {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.grupo-todos {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
