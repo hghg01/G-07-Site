@@ -296,20 +296,14 @@ input[type=submit] {
     grid-template-columns: 25% 25% 25% 25%;
 }
 
-.corpinho-div {
+.corpinho-todos {
     background-color: rgb(45, 52, 75);
     color: white;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-gap: 5px;
     justify-content: center;
     align-items: center;
     padding: 30px 0;
     
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 100px);
-  gap: 10px;
 }
