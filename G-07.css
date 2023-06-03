@@ -279,7 +279,7 @@ input[type=submit] {
     color: white;
     text-align: center;
     padding: 25px 0;
-    background: #181818;
+    background: rgb(26, 31, 48);
 }
 
 .funcoes-titulo a {
