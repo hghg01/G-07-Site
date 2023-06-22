@@ -308,8 +308,7 @@ input[type=submit] {
     align-items: center;
     padding: 30px 0;
     
-}
-keyframes tonext {
+@keyframes tonext {
   75% {
     left: 0;
   }
