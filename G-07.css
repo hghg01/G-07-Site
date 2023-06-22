@@ -322,7 +322,7 @@ input[type=submit] {
 
 .slides-list{
   --selected-item: 0;
-  --total-items: 4;
+  --total-items: 3;
   list-style-type: none;
   margin: 10px 0;
   padding: 0;
