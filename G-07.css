@@ -318,6 +318,9 @@ input[type=submit] {
   overflow: hidden;
 }
 
+.slide-show{
+  overflow: hidden;
+}
 .slides-list{
   --selected-item: 0;
   --total-items: 3;
