@@ -307,6 +307,7 @@ input[type=submit] {
     grid-auto-rows: (auto-fill, minmax(100px, auto);
     justify-content: center;
     align-items: center;
+    align-content: space-between;
     padding: 30px 0;
 
 
