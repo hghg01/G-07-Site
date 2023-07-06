@@ -71,23 +71,24 @@ Criptomoedas como Bitcoin e Ethereum surgiram nos últimos anos como uma alterna
 	    <input type="hidden" name="email " placeholder="anna.mercurio.reis@escola.pr.gov.br" required>
       <link rel="stylesheet" href="G-07.css">
 	    
-			<span>Nome Completo</span>
- 			<input type="text" class="input_text" name="nome" id="name"/>
-
-		</label>
-
-		<label>
- 			<span>Email</span>
-			<input type="text" class="input_text" name="email" id="email"/>
-		 </label>
-
-
-
-		<label>
-			 <span>Mensagem</span>
-			<textarea class="message" name="feedback" id="feedback"></textarea>
-  <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
-		</label>
+<form
+  action="https://formspree.io/f/xaygynql"
+  method="POST">
+    <p> Opinião sobre o site</p>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+    <label>
+        Seu nome:
+            <input type="text" name="nom">
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
 									
 	    </form>								
   
