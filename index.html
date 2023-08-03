@@ -6,74 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P?gina de Apresenta??o de Trabalho do Grupo 7</title>
     <link rel="stylesheet" href="G-07.css">
-</head>
-<body>
-    <header class="cabecalho">
-        <ul class="cabeçalho-lista">
-            <li class="cabeçalho-lista-item"> <a href="#corpo">Sobre o site</a> </li>
-            <li class="cabeçalho-lista-item"> <a href="#quem-somos">Sobre nós</a> </li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Disciplinas</a>
-                <div class="dropdown-content">
-                    <a href="G-07-TrabEdFinan.html">Trabalho Educação Financeira</a>
-                  <a href="G-07-trabempreende.html">Trabalho Empreendedorismo</a>
-                  <a href="G-07-TrabHis.html">Trabalho Historia</a>
-                    <a href="G-07-TrabRobo.html">Trabalho Robótica</a>
-                  
-                  
-                </div>
-            </li>
-        </ul>
-    </header>
-    <section class="pesquisa">
-        <input type="search" class="search-pesquisa" placeholder="O que você procura?">
-    </section>
-    <section id="corpo">
-        <div class="corpo-div-conteudo">
-            <h2 class="corpo-titulo">Sobre o Site</h2>
-            <p class="paragrafo-um">Ese site tem o objetivo de reunir os trabalhos realizados ao longo do ano pelos
-                alunos do Colégio Estadual do Paraná  em quatro disciplinas do Ensino Médio que são : Matemática 1 , Educação financeira, História e Robotíca.
-            </p>
-              <p class="paragrafo-dois"> No menu acima, pode-se encontrar a página feita para cada disciplina.</p>
-        </div>
-        <img class="foto-corpo" src="G-07-01.jpg" alt="foto equipe">
-    </section>
-
-          <section class="carrosel">
-        <h2 class="corpo-titulo">Acompanhe as novidades:</h2>
-        <div class="slide-show">
-            <ul class="slides-list">
-                <li class="slide">
-                    <a href="G-07-TrabEdFinan.html">
-                        <img class="redondo" src="G-07-1.jpg" />
-                    </a>
-                </li>
-                <li class="slide">
-                    <a href="G-07-trabempreende.html">
-                        <img class="redondo" src="G-07-7.jpg" />
-                    </a>
-                </li>
-                <li class="slide">
-                    <a href="G-07-TrabHis.html">
-                        <img class="redondo" src="G-O7-6.jpg" />
-                    </a>
-                </li>
-                <li class="slide">
-                    <a href="G-07-TrabRobo.html">
-                        <img class="redondo" src="G-07-14.jpg" />
-                    </a>
-                </li>
-               
-            </ul>
-        </div>
-    
-        <input type="radio" class="slide-controller" name="slide" checked />
-        <input type="radio" class="slide-controller" name="slide" />
-        <input type="radio" class="slide-controller" name="slide" />
-        <input type="radio" class="slide-controller" name="slide" />
-    </section>
-         <script>
-             
+    <script>
         const slideControllers = document.querySelectorAll('.slide-controller');
         const slidesList = document.querySelector('.slides-list');
         let currentSlide = 0;
@@ -95,6 +28,70 @@
         // Definir um temporizador para alternar automaticamente os slides a cada 20 segundos (20000 milissegundos)
         setInterval(autoChangeSlide, 10000);
     </script>
+</head>
+<body>
+    <header class="cabecalho">
+        <ul class="cabeçalho-lista">
+            <li class="cabeçalho-lista-item"> <a href="#corpo">Sobre o site</a> </li>
+            <li class="cabeçalho-lista-item"> <a href="#quem-somos">Sobre nós</a> </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Disciplinas</a>
+                <div class="dropdown-content">
+                    <a href="G-07-TrabEdFinan.html">Trabalho Educação Financeira</a>
+                  <a href="G-07-trabempreende.html">Trabalho Empreendedorismo</a>
+                  <a href="G-07-TrabHis.html">Trabalho Historia</a>
+                    <a href="G-07-TrabRobo.html">Trabalho Robótica</a>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <section class="pesquisa">
+        <input type="search" class="search-pesquisa" placeholder="O que você procura?">
+    </section>
+    <section id="corpo">
+        <div class="corpo-div-conteudo">
+            <h2 class="corpo-titulo">Sobre o Site</h2>
+            <p class="paragrafo-um">Ese site tem o objetivo de reunir os trabalhos realizados ao longo do ano pelos
+                alunos do Colégio Estadual do Paraná  em quatro disciplinas do Ensino Médio que são : Matemática 1 , Educação financeira, História e Robotíca.
+            </p>
+              <p class="paragrafo-dois"> No menu acima, pode-se encontrar a página feita para cada disciplina.</p>
+        </div>
+        <img class="foto-corpo" src="G-07-01.jpg" alt="foto equipe">
+    </section>
+    <section class="carrosel">
+        <h2 class="corpo-titulo">Acompanhe as novidades:</h2>
+        <div class="slide-show">
+            <ul class="slides-list">
+                <li class="slide">
+                    <a href="G-07-TrabEdFinan.html">
+                        <img class="redondo" src="G-07-1.jpg">
+                    </a>
+                </li>
+                <li class="slide">
+                    <a href="G-07-trabempreende.html">
+                        <img class="redondo" src="G-07-7.jpg">
+                    </a>
+                </li>
+                <li class="slide">
+                    <a href="G-07-TrabHis.html">
+                        <img class="redondo" src="G-O7-6.jpg">
+                    </a>
+                </li>
+                <li class="slide">
+                    <a href="G-07-TrabRobo.html">
+                        <img class="redondo" src="G-07-14.jpg">
+                    </a>
+                </li>
+               
+            </ul>
+        </div>
+    
+        <input type="radio" class="slide-controller" name="slide" checked>
+        <input type="radio" class="slide-controller" name="slide">
+        <input type="radio" class="slide-controller" name="slide">
+        <input type="radio" class="slide-controller" name="slide">
+    </section>
+         
             
     <section id="quem-somos">
         <h2 class="quem-somos-titulo">Quem somos?</h2>
@@ -120,15 +117,10 @@
                     Meus hobbies favoritos envolvem tocar contrabaixo e o estudo da l?ngua chinesa.
                     Espero esse ano aprimorar minha vida escolar e poder adquirir novos conhecimentos nas ?reas de meu interesse. 
                 </p>
-                
-            
-            
-            </div>
+             </div>
         </div>
     </section>
-<form
-  action="https://formspree.io/f/xaygynql"
-  method="POST">
+<form action="https://formspree.io/f/xaygynql"  method="POST">
     <p> Opinião sobre o site</p>
   <label>
     Your email:
@@ -138,7 +130,7 @@
     Your message:
     <textarea name="message"></textarea>
   </label>
-  <!-- your other form fields go here -->
+  
   <button type="submit">Send</button>
 </form>
     
