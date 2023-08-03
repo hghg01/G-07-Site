@@ -1,0 +1,185 @@
+
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Estilo de Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&amp;display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <img class="cabeçalho-imagem" src="g-cep.png" alt="Logo do CEP">
+        <p class="texto-cabecalho">Estilo de site</p>
+        <ul class="cabeçalho-lista">
+            <li class="cabeçalho-lista-item"> <a href="#corpo">Sobre o site</a> </li>
+            <li class="cabeçalho-lista-item"> <a href="#quem-somos">Sobre nós</a> </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Disciplinas</a>
+                <div class="dropdown-content">
+                    <a href="./Robótica/Robótica.html">Física 1</a>
+                    <a href="#">Matemática 1</a>
+                    <a href="./Biotec/biotec.html">Biotecnologia</a>
+                    <a href="./Programação/prog.html">Matemática 2</a>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <section class="pesquisa">
+        <input type="search" class="search-pesquisa" placeholder="O que você procura?">
+    </section>
+    <section id="corpo">
+        <div class="corpo-div-conteudo">
+            <h2 class="corpo-titulo">Sobre o Site</h2>
+            <p class="paragrafo-um">Este site tem o objetivo de reunir os trabalhos realizados ao longo do ano pelos
+                alunos do Colégio Estadual do Paraná em quatro disciplinas do Novo Ensino Médio, sendo elas: Matemática
+                I, Matemática II, Biotecnologia e Física I.
+            </p>
+            <p class="paragrafo-dois"> No menu acima, pode-se encontrar a página feita para cada disciplina.</p>
+        </div>
+        <img class="foto-corpo" src="g-foto.png" alt="foto do corpo">
+    </section>
+    <section class="carrosel">
+        <h2 class="corpo-titulo">Acompanhe as novidades:</h2>
+        <div class="slide-show">
+            <ul class="slides-list">
+                <li class="slide">
+                    <a href="Biotec/biotec.html">
+                        <img class="redondo" src="./imgs carrossel/biotec.png" />
+                    </a>
+                </li>
+                <li class="slide">
+                    <a href="#">
+                        <img class="redondo" src="./imgs carrossel/empreende.png" />
+                    </a>
+                </li>
+                <li class="slide">
+                    <a href="Programação/prog.html">
+                        <img class="redondo" src="./imgs carrossel/prog.png" />
+                    </a>
+                </li>
+                <li class="slide">
+                    <a href="Robótica/Robótica.html">
+                        <img class="redondo" src="./imgs carrossel/robo.png" />
+                    </a>
+                </li>
+                <li class="slide">
+                    <a href="Programação/prog.html">
+                        <img class="redondo" src="./imgs carrossel/tags.png" />
+                    </a>
+                </li>
+                <li class="slide">
+                    <a href="Robótica/Robótica.html">
+                        <img class="redondo" src="./imgs carrossel/rob2.png" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <input type="radio" class="slide-controller" name="slide" checked />
+        <input type="radio" class="slide-controller" name="slide" />
+        <input type="radio" class="slide-controller" name="slide" />
+        <input type="radio" class="slide-controller" name="slide" />
+        <input type="radio" class="slide-controller" name="slide" />
+        <input type="radio" class="slide-controller" name="slide" />
+    </section>
+    <script>
+        const slideControllers = document.querySelectorAll('.slide-controller');
+        const slidesList = document.querySelector('.slides-list');
+        let currentSlide = 0;
+
+        // Adicionar um evento de clique para cada controlador de slide
+        slideControllers.forEach((controller, index) => {
+            controller.addEventListener('click', () => {
+                currentSlide = index;
+                slidesList.style.left = `calc(${index} * -100%)`;
+            });
+        });
+
+        // Função para alterar os slides automaticamente após 20 segundos
+        function autoChangeSlide() {
+            currentSlide = (currentSlide + 1) % slideControllers.length;
+            slideControllers[currentSlide].checked = true;
+            slidesList.style.left = `calc(${currentSlide} * -100%)`;
+        }
+        // Definir um temporizador para alternar automaticamente os slides a cada 20 segundos (20000 milissegundos)
+        setInterval(autoChangeSlide, 10000);
+    </script>
+    <section id="quem-somos">
+        <h2 class="quem-somos-titulo">Quem somos?</h2>
+        <div class="alunos-todos">
+            <div class="alunos-div">
+                <img class="alunos-fotos" src="g-01.png" alt="foto do aluno">
+                <h3 class="nome-aluno">Aluno 01 da turma XXX</h3>
+                <p class="texto-aluno">Um texto de apresentação sobre o aluno, no qual ele coloca informações que julga
+                    pertinente e que
+                    gostaria que soubessemos sobre ele.
+                </p>
+            </div>
+            <div class="alunos-div">
+                <img class="alunos-fotos" src="g-01.png" alt="foto do aluno">
+                <h3 class="nome-aluno">Aluno 02 da turma XXX</h3>
+                <p class="texto-aluno">Um texto de apresentação sobre o aluno, no qual ele coloca informações que julga
+                    pertinente e que
+                    gostaria que soubessemos sobre ele.
+                </p>
+            </div>
+            <div class="alunos-div">
+                <img class="alunos-fotos" src="g-01.png" alt="foto do aluno">
+                <h3 class="nome-aluno">Aluno 03 da turma XXX</h3>
+                <p class="texto-aluno">Um texto de apresentação sobre o aluno, no qual ele coloca informações que julga
+                    pertinente e que
+                    gostaria que soubessemos sobre ele.
+                </p>
+            </div>
+            <div class="alunos-div">
+                <img class="alunos-fotos" src="g-01.png" alt="foto do aluno">
+                <h3 class="nome-aluno">Aluno 04 da turma XXX</h3>
+                <p class="texto-aluno">Um texto de apresentação sobre o aluno, no qual ele coloca informações que julga
+                    pertinente e que
+                    gostaria que soubessemos sobre ele.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <form class="formulario" method="post" action="https://formspree.io/f/myyaazro">
+        <p class="contato__texto"> Em caso de dúvidas, envie uma mensagem preenchendo o formulário abaixo.</p>
+        <div class="lado">
+            <div class="lado_1">
+                <div class="field">
+                    <label for="nome" class="contato__texto">Seu nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
+                </div>
+
+                <div class="field">
+                    <label for="email" class="contato__texto">Seu E-Mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu E-Mail*" required>
+                </div>
+            </div>
+            <div class="field">
+                <div class="lado_2">
+                    <label for="mensagem" class="contato__texto">Sua mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" placeholder="Mensagem*" required
+                        class="mensagem"></textarea>
+                </div>
+            </div>
+        </div>
+        <input type="submit" name="acao" value="Enviar">
+    </form>
+    <footer class="roda-pé">
+        <p class="fim"> Trabalho desenvolvido na disciplina de programação </p>
+        <div class="meio">
+            <img class="roda-pé-imagem" src="g-cep.png" alt="Logo">
+            <span></span>
+            <p class="roda-pé-texto">Colégio Estadual do Paraná</p>
+        </div>
+    </footer>
+</body>
+
+</html>
