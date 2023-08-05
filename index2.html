@@ -68,48 +68,33 @@
                         <img class="redondo" src="G-07-TrabRobo.html" />
                     </a>
                 </li>
-                <li class="slide">
-                    <a href="Programação/prog.html">
-                        <img class="redondo" src="./imgs carrossel/tags.png" />
-                    </a>
-                </li>
-                <li class="slide">
-                    <a href="Robótica/Robótica.html">
-                        <img class="redondo" src="./imgs carrossel/rob2.png" />
-                    </a>
-                </li>
+                
             </ul>
         </div>
 
-        <input type="radio" class="slide-controller" name="slide" checked />
-        <input type="radio" class="slide-controller" name="slide" />
-        <input type="radio" class="slide-controller" name="slide" />
-        <input type="radio" class="slide-controller" name="slide" />
-        <input type="radio" class="slide-controller" name="slide" />
-        <input type="radio" class="slide-controller" name="slide" />
+       <section class="slider">
+            <input name='slide' type="radio" checked >
+            <input name='slide' type="radio" >
+            <input name='slide' type="radio">
+            <input name='slide' type="radio">
+        
+            <div class="slider-content">
+                <div class="slider-item">
+                    <img class="imagem-equipe" src=""G-07-1.jpg">
+                </div>
+                <div class="slider-item">
+                    <img class="imagem-equipe" src=""G-07-7.jpg">
+                </div>
+                <div class="slider-item">3</div>
+                <img class="imagem-equipe" src=""G-07-6.jpg">
+                <div class="slider-item">4</div>
+                <img class="imagem-equipe" src=""G-07-14.jpg">
+            </div>
+        </section>
+        
     </section>
-    <script>
-        const slideControllers = document.querySelectorAll('.slide-controller');
-        const slidesList = document.querySelector('.slides-list');
-        let currentSlide = 0;
 
-        // Adicionar um evento de clique para cada controlador de slide
-        slideControllers.forEach((controller, index) => {
-            controller.addEventListener('click', () => {
-                currentSlide = index;
-                slidesList.style.left = `calc(${index} * -100%)`;
-            });
-        });
-
-        // Função para alterar os slides automaticamente após 20 segundos
-        function autoChangeSlide() {
-            currentSlide = (currentSlide + 1) % slideControllers.length;
-            slideControllers[currentSlide].checked = true;
-            slidesList.style.left = `calc(${currentSlide} * -100%)`;
-        }
-        // Definir um temporizador para alternar automaticamente os slides a cada 20 segundos (20000 milissegundos)
-        setInterval(autoChangeSlide, 10000);
-    </script>
+    
     <section id="quem-somos">
         <h2 class="quem-somos-titulo">Quem somos?</h2>
         <div class="alunos-todos">
