@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P?gina de Apresenta??o de Trabalho do Grupo 7</title>
+    <link rel="stylesheet" href="G-07_2.css">
+</head>
+<body>
+      <header class="cabecalho">
+        <ul class="cabeçalho-lista">
+            <li class="cabeçalho-lista-item"> <a href="#corpo">Sobre o site</a> </li>
+            <li class="cabeçalho-lista-item"> <a href="#quem-somos">Sobre nós</a> </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Disciplinas</a>
+                <div class="dropdown-content">
+                    <a href="G-07-TrabEdFinan.html">Trabalho Educação Financeira</a>
+                  <a href="G-07-trabempreende.html">Trabalho Empreendedorismo</a>
+                  <a href="G-07-TrabHis.html">Trabalho Historia</a>
+                    <a href="G-07-TrabRobo.html">Trabalho Robótica</a>
+                </div>
+            </li>
+        </ul>
+    </header>
+<div class="flex-container">
+ <div class="texto-equipe">
 
+
+<section id="Trab1">
+        <div class="corpo-div-conteudo">
+            <h2 class="corpo-titulo"> Trabalho 1 do segundo trimestre</h2>
+            <br>
+            <p class="paragrafo-um">Instruções </p>
+          <p> Produzir um sinaleiro “Semáforo” com diversos recursos:
+           - Controle de carros em um cruzamento, desenvolver somente
+um Lado do cruzamento.
+
+
+- Controle da passagem de pedestre tem que ser solicitar,
+por botão.
+
+
+- Sinal sonoro para informar qual sinal luminoso o semáforo
+está indicando.
+
+
+- Adicionar o controlador visual de tempo para os Pedestres
+e outro para os carros, para informando que o semáforo irá mudar o sinal
+luminoso e sonoro.
+
+
+Será avaliado a entrega do projeto com a suas partes, o algoritmo
+de montagem e a programação comentada.
+</p>
+          
+            <br>
+            <p class="paragrafo-um">Montagem </p>
+           <div class="corpinho-div">
+                <img class="foto-programação1" src="G-07-19.jpg" alt="foto programação1">
+	     </div>
+            <br>
+            <p class="paragrafo-um">Código</p>
+       
+          <pre class="code-block">
+            <code class="code-indent" id="cPlusPlusCode">
+              // C++ code 
+
+              int on_off = 0;
+              int button = 0;
+              
+              void setup() 
+              {
+              pinMode (13, OUTPUT);          
+              pinMode (12, OUTPUT);
+              pinMode (12, INPUT);
+              digitalWrite(13, LOW);
+              digitalWrite(12, LOW);
+              on_off = LOW;
+              }
+            
+              void loop() 
+              {
+              button = digitalRead (12); 
+              if (button == HIGH) {
+                if (on_off == LOW) {
+                digitalWrite(13, HIGH);
+                on_off= HIGH;
+                } else {
+                  digitalWrite(13, LOW);
+                  on_off = LOW;
+                }
+              }
+              delay(10); // Delay a little bit to improve simulation
+              }
+            </code>
+            <button onclick="copyClip()">Copiar códigos!</button>
+          </pre>
+        </section>
+
+        </div>
+        
+    </section>
+    
