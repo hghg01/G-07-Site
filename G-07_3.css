@@ -2,6 +2,12 @@
     img {
         width: 100%;
     }
+    
+    @media screen and (max-width: 656px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
 
     body {
         background-image: linear-gradient(rgba(174, 128, 231, 0.821), rgb(152, 199, 216));
