@@ -97,6 +97,21 @@
         padding: 0px 0px 20px 0px;
     }
 
+   }
+
+.alunos-div {
+    text-align: center;
+    padding: 50px 0;
+}
+.alunos-todos {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.alunos-fotos {
+    width: 120px;
+    padding: 0px 0px 20px 0px;
+}
+
     .roda-pé-imagem {
         width: 40px;
         border-radius: 50%;
