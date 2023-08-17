@@ -1,13 +1,15 @@
-@import url(contato.css);
-
 @media screen and (max-width: 656px) {
     * {
         margin: 0;
         padding: 0;
     }
 
+    body {
+        background-image: linear-gradient(rgba(174, 128, 231, 0.821), rgb(152, 199, 216));
+    }
+
     .cabeçalho {
-        background-color: rgb(30,144,255);
+        background-color: rgb(174, 128, 231);
         color: white;
         display: flex;
         justify-content: space-around;
@@ -44,8 +46,6 @@
     }
 
     #Trab1 {
-        background-color: rgb(70,130,180)
-;
         color: black;
         display: flex;
         justify-content: center;
@@ -55,8 +55,6 @@
     }
 
     #Trab2 {
-        background-color: rgb(70,130,180)
-;
         color: black;
         display: flex;
         justify-content: center;
@@ -66,7 +64,6 @@
     }
 
     #Trab3 {
-        background-color: rgb(240, 205, 201);
         color: black;
         display: flex;
         justify-content: center;
@@ -88,12 +85,12 @@
     .corpo-div-conteudo {
         font-family: 'Ubuntu', sans-serif;
         line-height: 1.8;
-        margin: 0 33px;
     }
 
     .roda-pé {
-        background-color: black;
+        background-color: rgb(255, 255, 255);
         justify-content: center;
+        border: 2px solid rgb(160, 154, 154);
     }
 
     .nome-aluno {
@@ -108,7 +105,7 @@
 
     .roda-pé-texto {
         margin: 10px 0px 5px 0px;
-        color: white;
+        color: rgb(0, 0, 0);
     }
 
     li {
@@ -186,13 +183,19 @@
         padding: 0;
     }
 
+    body {
+        background-image: linear-gradient(rgba(174, 128, 231, 0.821), rgb(152, 199, 216));
+    }
+
     .cabeçalho {
-        background-color: rgb(228, 67, 39);
+        background-color: rgb(174, 128, 231);
         color: white;
         display: flex;
         justify-content: space-around;
         padding: 15px 0;
         font-family: 'Ubuntu', sans-serif;
+        position: fixed;
+        top: 0;
         width: 100%;
         flex-wrap: wrap;
         align-items: center;
@@ -224,16 +227,15 @@
     }
 
     #Trab1 {
-        background-color: rgb(240, 205, 201);
         color: black;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 20px 0;
+        padding-top: 140px;
     }
 
     #Trab2 {
-        background-color: rgb(210, 153, 146);
         color: black;
         display: flex;
         justify-content: center;
@@ -242,7 +244,6 @@
     }
 
     #Trab3 {
-        background-color: rgb(240, 205, 201);
         color: black;
         display: flex;
         justify-content: center;
@@ -266,8 +267,9 @@
     }
 
     .roda-pé {
-        background-color: black;
-
+        background-color: rgb(255, 255, 255);
+        justify-content: center;
+        border: 2px solid rgb(160, 154, 154);
     }
 
     .nome-aluno {
@@ -282,7 +284,7 @@
 
     .roda-pé-texto {
         margin: 10px 0px 5px 0px;
-        color: white;
+        color: rgb(0, 0, 0);
     }
 
     li {
@@ -360,8 +362,12 @@
         padding: 0;
     }
 
+    body {
+        background-image: linear-gradient(rgba(174, 128, 231, 0.821), rgb(152, 199, 216));
+    }
+
     .cabeçalho {
-        background-color: rgb(228, 67, 39);
+        background-color: rgb(174, 128, 231);
         color: white;
         display: flex;
         justify-content: space-around;
@@ -398,7 +404,6 @@
     }
 
     #Trab1 {
-        background-color: rgb(220, 185, 231);
         color: black;
         display: flex;
         justify-content: center;
@@ -408,7 +413,6 @@
     }
 
     #Trab2 {
-        background-color: rgb(210, 153, 146);
         color: black;
         display: flex;
         justify-content: center;
@@ -417,7 +421,6 @@
     }
 
     #Trab3 {
-        background-color: rgb(240, 205, 201);
         color: black;
         display: flex;
         justify-content: center;
@@ -443,8 +446,9 @@
     }
 
     .roda-pé {
-        background-color: black;
+        background-color: rgb(255, 255, 255);
         justify-content: center;
+        border: 2px solid rgb(160, 154, 154);
     }
 
     .nome-aluno {
@@ -459,7 +463,7 @@
 
     .roda-pé-texto {
         margin: 10px 0px 5px 0px;
-        color: white;
+        color: rgb(0, 0, 0);
     }
 
     li {
