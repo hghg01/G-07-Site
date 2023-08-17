@@ -1,0 +1,531 @@
+@import url(contato.css);
+
+@media screen and (max-width: 656px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .cabeçalho {
+        background-color: rgb(228, 67, 39);
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        padding: 15px 0;
+        font-family: 'Ubuntu', sans-serif;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .cabeçalho-imagem a {
+        width: 5%;
+        padding: 5px 5px;
+        display: block;
+    }
+
+    .cabeçalho-imagem {
+        border-radius: 50%;
+        width: 80px;
+    }
+
+    .foto-corpo a {
+        width: 30%;
+        padding: 40px;
+    }
+
+    .paragrafo-um {
+        text-align: justify;
+    }
+
+    .foto-corpo {
+        width: 65%;
+        padding: 10px 0;
+    }
+
+    #Trab1 {
+        background-color: rgb(240, 205, 201);
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    #Trab2 {
+        background-color: rgb(210, 153, 146);
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    #Trab3 {
+        background-color: rgb(240, 205, 201);
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .cabeçalho-lista-item {
+        display: none;
+        font-size: 20px;
+    }
+
+    .texto-cabecalho {
+        font-size: 20px;
+        margin: 27px 0px;
+    }
+
+    .corpo-div-conteudo {
+        font-family: 'Ubuntu', sans-serif;
+        line-height: 1.8;
+        margin: 0 33px;
+    }
+
+    .roda-pé {
+        background-color: black;
+        justify-content: center;
+    }
+
+    .nome-aluno {
+        padding: 0px 0px 20px 0px;
+    }
+
+    .roda-pé-imagem {
+        width: 40px;
+        border-radius: 50%;
+        padding: 0px 30px;
+    }
+
+    .roda-pé-texto {
+        margin: 10px 0px 5px 0px;
+        color: white;
+    }
+
+    li {
+        float: left;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a,
+    .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover,
+    .dropdown:hover .dropbtn {
+        background-color: rgb(0, 0, 0);
+    }
+
+    li.dropdown {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+
+    }
+
+    .fim {
+        text-align: center;
+        color: rgb(0, 0, 0);
+        line-height: 2.5;
+    }
+
+    .meio {
+        display: flex;
+        justify-content: center;
+    }
+
+    .corpo-titulo {
+        text-decoration: underline;
+    }
+}
+
+@media screen and (min-width:656px) and (max-width: 1065px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .cabeçalho {
+        background-color: rgb(228, 67, 39);
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        padding: 15px 0;
+        font-family: 'Ubuntu', sans-serif;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .cabeçalho-imagem a {
+        width: 5%;
+        padding: 5px 5px;
+        display: block;
+    }
+
+    .cabeçalho-imagem {
+        border-radius: 50%;
+        width: 80px;
+    }
+
+    .foto-corpo a {
+        width: 30%;
+        padding: 40px;
+    }
+
+    .paragrafo-um {
+        text-align: justify;
+    }
+
+    .foto-corpo {
+        width: 30%;
+        padding: 40px;
+    }
+
+    #Trab1 {
+        background-color: rgb(240, 205, 201);
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    #Trab2 {
+        background-color: rgb(210, 153, 146);
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    #Trab3 {
+        background-color: rgb(240, 205, 201);
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .cabeçalho-lista-item {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .texto-cabecalho {
+        font-size: 20px;
+        margin: 27px 0px;
+    }
+
+    .corpo-div-conteudo {
+        font-family: 'Ubuntu', sans-serif;
+        line-height: 1.8;
+    }
+
+    .roda-pé {
+        background-color: black;
+
+    }
+
+    .nome-aluno {
+        padding: 0px 0px 20px 0px;
+    }
+
+    .roda-pé-imagem {
+        width: 40px;
+        border-radius: 50%;
+        padding: 0px 30px;
+    }
+
+    .roda-pé-texto {
+        margin: 10px 0px 5px 0px;
+        color: white;
+    }
+
+    li {
+        float: left;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a,
+    .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover,
+    .dropdown:hover .dropbtn {
+        background-color: rgb(0, 0, 0);
+    }
+
+    li.dropdown {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+
+    }
+
+    .fim {
+        text-align: center;
+        color: rgb(0, 0, 0);
+        line-height: 2.5;
+    }
+
+    .meio {
+        display: flex;
+        justify-content: center;
+    }
+
+    .corpo-titulo {
+        text-decoration: underline;
+    }
+}
+
+@media screen and (min-width: 1065px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .cabeçalho {
+        background-color: rgb(228, 67, 39);
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        padding: 15px 0;
+        font-family: 'Ubuntu', sans-serif;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .cabeçalho-imagem a {
+        width: 5%;
+        padding: 5px 5px;
+        display: block;
+    }
+
+    .cabeçalho-imagem {
+        border-radius: 50%;
+        width: 80px;
+    }
+
+    .foto-corpo a {
+        width: 30%;
+        padding: 40px;
+    }
+
+    .paragrafo-um {
+        text-align: justify;
+    }
+
+    .foto-corpo {
+        width: 30%;
+        padding: 40px;
+    }
+
+    #Trab1 {
+        background-color: rgb(220, 185, 231);
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        padding-top: 140px;
+    }
+
+    #Trab2 {
+        background-color: rgb(210, 153, 146);
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    #Trab3 {
+        background-color: rgb(240, 205, 201);
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .cabeçalho-lista-item {
+        display: inline-block;
+        margin: 0 25px;
+        font-size: 20px;
+        padding: 15px 0px;
+    }
+
+    .texto-cabecalho {
+        font-size: 20px;
+        margin: 27px 0px;
+    }
+
+    .corpo-div-conteudo {
+        font-family: 'Ubuntu', sans-serif;
+        line-height: 1.8;
+    }
+
+    .roda-pé {
+        background-color: black;
+        justify-content: center;
+    }
+
+    .nome-aluno {
+        padding: 0px 0px 20px 0px;
+    }
+
+    .roda-pé-imagem {
+        width: 40px;
+        border-radius: 50%;
+        padding: 0px 30px;
+    }
+
+    .roda-pé-texto {
+        margin: 10px 0px 5px 0px;
+        color: white;
+    }
+
+    li {
+        float: left;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a,
+    .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover,
+    .dropdown:hover .dropbtn {
+        background-color: rgb(0, 0, 0);
+    }
+
+    li.dropdown {
+        display: inline-block;
+        font-size: 20px;
+        padding: 15px 0px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+
+    }
+
+    .fim {
+        text-align: center;
+        color: rgb(0, 0, 0);
+        line-height: 2.5;
+    }
+
+    .meio {
+        display: flex;
+        justify-content: center;
+    }
+
+    .corpo-titulo {
+        text-decoration: underline;
+    }
+}
