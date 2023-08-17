@@ -1,0 +1,102 @@
+
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Estilo de Site</title>
+    <link rel="stylesheet" href="G-07_2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&amp;display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <header class="cabeçalho">
+        <img class="cabeçalho-imagem" src="g-cep.png" alt="Logo do CEP">
+        <p class="texto-cabecalho">Estilo de site</p>
+        <ul class="cabeçalho-lista">
+            <li class="cabeçalho-lista-item"> <a href="#corpo">Sobre o site</a> </li>
+            <li class="cabeçalho-lista-item"> <a href="#quem-somos">Sobre nós</a> </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Disciplinas</a>
+                <div class="dropdown-content">
+                    <a href="G-07-TrabEdFinan.html">Educação Financeira</a>
+                    <a href="G-07-TrabHis">História</a>
+                    <a href="G-07-TrabRobo.html">Física I</a>
+                    <a href="G-07-trabempreende.html">Matemática 2</a>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <section class="pesquisa">
+        <input type="search" class="search-pesquisa" placeholder="O que você procura?">
+    </section>
+    <section id="corpo">
+        <div class="corpo-div-conteudo">
+
+ <div class="corpo-div-conteudo">
+            <h2 class="corpo-titulo">Trabalho 1 / Segundo trimestre</h2>
+            <p class="paragrafo-um">  <p class="paragrafo-um">  <pre class="code-block">
+            <code class="code-indent" id="cPlusPlusCode">
+              // C++ code 
+
+              int on_off = 0;
+              int button = 0;
+              
+              void setup() 
+              {
+              pinMode (13, OUTPUT);          
+              pinMode (12, OUTPUT);
+              pinMode (12, INPUT);
+              digitalWrite(13, LOW);
+              digitalWrite(12, LOW);
+              on_off = LOW;
+              }
+            
+              void loop() 
+              {
+              button = digitalRead (12); 
+              if (button == HIGH) {
+                if (on_off == LOW) {
+                digitalWrite(13, HIGH);
+                on_off= HIGH;
+                } else {
+                  digitalWrite(13, LOW);
+                  on_off = LOW;
+                }
+              }
+              delay(10); // Delay a little bit to improve simulation
+              }
+            </code>
+
+          </pre>
+        </section>
+        </div>
+            </p>
+
+		
+
+	   <p class="paragrafo-dois"> No menu acima, pode-se encontrar a página feita para cada disciplina.</p>
+        </div>
+        <img class="foto-corpo" src="G-07-19.jpg" alt="foto do corpo">
+    </section>
+	
+        
+    
+   
+    <footer class="roda-pé">
+        <p class="fim"> Trabalho desenvolvido na disciplina de programação </p>
+        <div class="meio">
+            <img class="roda-pé-imagem" src="g-cep.png" alt="Logo">
+            <span></span>
+            <p class="roda-pé-texto">Colégio Estadual do Paraná</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+	
+    
