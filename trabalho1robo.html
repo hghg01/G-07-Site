@@ -40,35 +40,77 @@
             <h2 class="corpo-titulo">Trabalho 1 / Segundo trimestre</h2>
             <p class="paragrafo-um">  <p class="paragrafo-um">  <pre class="code-block">
             <code class="code-indent" id="cPlusPlusCode">
-              // C++ code 
+              //Variáveis
 
-              int on_off = 0;
-              int button = 0;
-              
-              void setup() 
-              {
-              pinMode (13, OUTPUT);          
-              pinMode (12, OUTPUT);
-              pinMode (12, INPUT);
-              digitalWrite(13, LOW);
-              digitalWrite(12, LOW);
-              on_off = LOW;
-              }
-            
-              void loop() 
-              {
-              button = digitalRead (12); 
-              if (button == HIGH) {
-                if (on_off == LOW) {
-                digitalWrite(13, HIGH);
-                on_off= HIGH;
-                } else {
-                  digitalWrite(13, LOW);
-                  on_off = LOW;
-                }
-              }
-              delay(10); // Delay a little bit to improve simulation
-              }
+int botao=8;    
+int carrovermelho=13;  
+int carroamarelo=12;
+int carroverde=11;
+int pedestrevermelho=7;
+int pedestreverde=6;
+int som=10;
+int start=0; //Botão começa com zero indicando que está desligado
+
+void setup(){
+ //Informações dos pino no arduino
+ // Iremos informar se é dado de saída (OUTPUT) ou entrada (INPUT)
+  pinMode(botao, INPUT);
+  pinMode(carrovermelho, OUTPUT);
+  pinMode(carroamarelo, OUTPUT);
+  pinMode(carroverde, OUTPUT);
+  pinMode(pedestrevermelho, OUTPUT);
+  pinMode(pedestreverde, OUTPUT);
+  pinMode(som, OUTPUT);
+}
+
+void loop(){
+ 
+  digitalWrite(carroverde, HIGH); // Inicia com led verde do carro acesso
+  digitalWrite(pedestrevermelho, HIGH); // Inicia com led vermelho do pedestre acesso 
+   
+  start = digitalRead(botao); //Lendo a porta do botão
+  
+  if (start == HIGH) { // Se o botão estiver ligado ...
+   
+    digitalWrite(carroverde, LOW); // Desligue verde
+     
+    digitalWrite(carroamarelo, HIGH); //Acenda o amarelo
+   delay(1000); // por 1 segundo
+   digitalWrite(carroamarelo, LOW); //depois apague
+         
+    digitalWrite(carrovermelho, HIGH); //Liga o vermelho
+    
+    delay(2000); //Tempo de 2 segundos para acender o do pedestre
+    
+    // Um FOR até 10, cada rodada vai demorar 1 segundo, 10 segundos totais
+    for(int y=0; y<10; y++){         
+      digitalWrite(pedestrevermelho, LOW);
+      digitalWrite(pedestreverde, HIGH);
+      tone (som, 440, 10000); // Sinal sonoro
+      delay(1000);
+    }
+    
+    // Um FOR até 5, cada rodada vai demorar 1 segundo, 5 segundos totais
+    for(int x=0; x<5; x++){
+      digitalWrite(pedestreverde,LOW);
+      tone(som, 440, 500);
+      digitalWrite(pedestrevermelho, HIGH);
+      delay(500);
+      digitalWrite(pedestrevermelho,LOW);
+      delay(500);
+     }
+    
+    digitalWrite(pedestrevermelho, HIGH);
+    
+    delay(3000); // Tempo entre o desligamento do sinal do pedestre para o ligamento do sinal dos carros
+    
+    digitalWrite(carrovermelho, LOW);
+   digitalWrite(carroverde, HIGH);
+    
+    delay(15000); // Tempo que o botão vai ficar inativo até que outro pedestre acione
+  }
+    
+}
             </code>
 
           </pre>
