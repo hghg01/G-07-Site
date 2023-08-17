@@ -7,7 +7,7 @@
     }
 
     .cabeçalho {
-        background-color: rgb(228, 67, 39);
+        background-color: rgb(30,144,255));
         color: white;
         display: flex;
         justify-content: space-around;
@@ -44,7 +44,8 @@
     }
 
     #Trab1 {
-        background-color: rgb(240, 205, 201);
+        background-color: rgb(70,130,180)
+;
         color: black;
         display: flex;
         justify-content: center;
@@ -54,7 +55,8 @@
     }
 
     #Trab2 {
-        background-color: rgb(210, 153, 146);
+        background-color: rgb(70,130,180)
+;
         color: black;
         display: flex;
         justify-content: center;
