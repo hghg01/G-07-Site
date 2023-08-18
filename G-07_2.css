@@ -1053,6 +1053,7 @@
 
 .slider{
     overflow: hidden;
+   text-align: center;
 
 }
 .slider > .slider-content{
