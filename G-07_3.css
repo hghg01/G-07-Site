@@ -540,7 +540,82 @@
     }
 }
 
+ carrossel__titulo {
+        cor :  var ( --laranja );
+        cor de fundo :  var ( --branco );
+        alinhamento de texto : centro;
+        text-transform : letras maiúsculas;
+        tamanho da fonte :  18 px ;
+        peso da fonte :  700 ;
+        preenchimento :  1 em  0  0,5 em  0 ;
+    }
 
+    . swiper-slide  img {
+        largura :  80 % ;
+        raio da borda :  25 % ;
+    }
+
+    . paginação do swiper {
+        posição : inicial;
+        margem :  .5 em  0 ;
+        alinhamento de texto : centro;
+        transição : opacidade de  0,3 s ;
+        transform :  translate3d ( 0 ,  0 ,  0 );
+        índice z :  10 ;
+    }
+
+    . card__descrição {
+        exibição : flexível;
+        justificar-conteúdo : espaço-entre;
+        margem inferior :  0,5 em ;
+    }
+
+    . card__botões {
+        exibição : flexível;
+        justificar-conteúdo : espaço-entre;
+    }
+
+    . botões {
+        exibição : flexível;
+    }
+
+    . carta {
+        plano de fundo :  var ( --branco );
+        box-shadow :  0 px  4 px  4 px  rgba ( 0 ,  0 ,  0 ,  0.25 );
+        raio da borda :  10 px ;
+        margem :  1 em ;
+        preenchimento :  1 em ;
+    }
+
+    . descrição__titulo {
+        cor :  var ( --laranja );
+        peso da fonte :  700 ;
+    }
+
+    . descrição__titulo - livro {
+        cor :  var ( --azul );
+        tamanho da fonte :  18 px ;
+        peso da fonte :  700 ;
+        margem :  0,5 em  0 ;
+    }
+
+    . descrição__tex to { _
+        tamanho da fonte :  14 px ;
+    }
+
+    . botões__item {
+        margem :  0  0,5 em ;
+    }
+
+    . botões__anc ou um {
+        cor de fundo :  var ( --laranja );
+        preenchimento :  1 em  2,2 em ;
+        cor :  var ( --branco );
+        peso da fonte :  700 ;
+        decoração de texto : nenhum;
+    }
+
+}
 
 
 .slider{
@@ -576,51 +651,51 @@
 }
 
 .slider > input:nth-child(5):checked ~ .slider-content{
-    transform: translateX(-300%);
+    transform: translateX(-400%);
 }
 
 .slider > input:nth-child(6):checked ~ .slider-content{
-    transform: translateX(-300%);
+    transform: translateX(-500%);
 }
 
 .slider > input:nth-child(7):checked ~ .slider-content{
-    transform: translateX(-300%);
+    transform: translateX(-600%);
 }
 
 .slider > input:nth-child(8):checked ~ .slider-content{
-    transform: translateX(-300%);
+    transform: translateX(-700%);
 }
 
 .slider > input:nth-child(9):checked ~ .slider-content{
-    transform: translateX(-300%);
+    transform: translateX(-800%);
 }
 
 .slider > input:nth-child(10):checked ~ .slider-content{
-    transform: translateX(-300%);
+    transform: translateX(-900%);
 }
 
 .slider > input:nth-child(11):checked ~ .slider-content{
-    transform: translateX(-300%);
+    transform: translateX(-1000%);
 }
 
 .slider > input:nth-child(12):checked ~ .slider-content{
-    transform: translateX(-300%);
+    transform: translateX(-1100%);
 }
 
 .slider > input:nth-child(13):checked ~ .slider-content{
-    transform: translateX(-300%);
+    transform: translateX(-1200%);
 }
 
 .slider > input:nth-child(14):checked ~ .slider-content{
-    transform: translateX(-300%);
+    transform: translateX(-1300%);
 }
 
 .slider > input:nth-child(15):checked ~ .slider-content{
-    transform: translateX(-300%);
+    transform: translateX(-1400%);
 }
 
 .slider > input:nth-child(16):checked ~ .slider-content{
-    transform: translateX(-300%);
+    transform: translateX(-1500%);
 }
 
 
