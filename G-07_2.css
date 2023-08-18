@@ -26,8 +26,9 @@
     }
 
     .foto-corpo {
-        width: 90%;
-        padding: 30px 0;
+         largura: 38rem;
+  altura: 38rem;
+  raio da borda: .5rem;
     }
 
 
