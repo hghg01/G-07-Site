@@ -1083,4 +1083,25 @@
 }
 
 
+.caixa de vídeo {
+  alinhamento de texto: centro;
+  raio da borda: .5rem;
+  cor de fundo: #0d2e4f;
+  preenchimento: 2rem;
+  margem: 2rem 0;
+}
+
+.video-box h3 {
+  cor: #fff;
+}
+
+.video-box video{
+  largura: 50%;
+  altura máxima: 400px;
+  ajuste do objeto: capa;
+  borda: 2px sólido #ccc;
+  raio da borda: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 
