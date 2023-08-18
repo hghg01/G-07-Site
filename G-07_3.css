@@ -619,20 +619,20 @@
 
 
 .slider{
-    overflow: hidden;
+    estouro: oculto;
 
 }
 .slider > .slider-content{
-    display: flex;
+    exibição: flexível;
     flex-wrap: nowrap;
-    width: 100%;
-    transition: all 500ms ease;
+    largura: 100%;
+    transição: todos os 500ms facilitam;
 
 }
 
 .slider > .slider-content > .slider-item {
-    flex: 0 0 auto;
-    width: 100%;
+    flexível: 0 0 automático;
+    largura: 100%;
 }
 
 .slider > input:nth-child(1):checked ~ .slider-content{
