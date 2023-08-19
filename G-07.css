@@ -912,17 +912,17 @@ input[type=submit] {
     width: 100%;
 }
 
-.slide > input:nth-child(1):checked ~ .slider-content{
+.slider > input:nth-child(1):checked ~ .slider-content{
     transform: translateX(0%);
 }
 
-.slide > input:nth-child(2):checked ~ .slider-content{
+.slider > input:nth-child(2):checked ~ .slider-content{
     transform: translateX(-100%);
 }
-.slide > input:nth-child(3):checked ~ .slider-content{
+.slider > input:nth-child(3):checked ~ .slider-content{
     transform: translateX(-200%);
 }
 
-.slide > input:nth-child(4):checked ~ .slider-content{
+.slider > input:nth-child(4):checked ~ .slider-content{
     transform: translateX(-300%);
 }
