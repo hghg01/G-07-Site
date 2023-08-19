@@ -885,6 +885,21 @@ input[type=submit] {
     .corpo-titulo {
         text-decoration: underline;
     }
+
+     .slider {
+        largura: 80%;
+        raio da borda: 25%;
+    }
+
+    .slider {
+        posição: inicial;
+        margem: 0,5em 0;
+        alinhamento de texto: centro;
+        transição: opacidade .3s;
+        transform: translate3d(0, 0, 0);
+        índice z: 10;
+    }
+         
 .slider{
     overflow: hidden;
    text-align: center;
