@@ -43,6 +43,9 @@
               //Variáveis
 
 int botao=8;    
+int ca//Variáveis
+
+int botao=8;    
 int carrovermelho=13;  
 int carroamarelo=12;
 int carroverde=11;
@@ -50,6 +53,25 @@ int pedestrevermelho=7;
 int pedestreverde=6;
 int som=10;
 int start=0; //Botão começa com zero indicando que está desligado
+int display=1;
+int display1=2;
+int pedestre1=~5;
+int pedestre2=4;
+int pedestre3=~3;
+#define C A4
+#define D A5
+#define TM1637Display display(C, D);
+const byte digitos[10][7] = {{1,1,1,1,1,1,0},
+					   		 {0,1,1,0,0,0,0},
+					   		 {1,1,0,1,1,0,1},
+					   		 {1,1,1,1,0,0,1},
+					   		 {0,1,1,0,0,1,1},
+  					   		 {1,0,1,1,0,1,1},
+					   		 {1,0,1,1,1,1,1},
+					   		 {1,1,1,0,0,0,0},
+				       		 {1,1,1,1,1,1,1},
+					   		 {1,1,1,0,0,1,1}};
+
 
 void setup(){
  //Informações dos pino no arduino
@@ -61,53 +83,66 @@ void setup(){
   pinMode(pedestrevermelho, OUTPUT);
   pinMode(pedestreverde, OUTPUT);
   pinMode(som, OUTPUT);
+  pinMode (display, OUTPUT);
 }
 
 void loop(){
  
-  digitalWrite(carroverde, HIGH); // Inicia com led verde do carro acesso
-  digitalWrite(pedestrevermelho, HIGH); // Inicia com led vermelho do pedestre acesso 
+  for (int i = 0; i <= 9999; i++) {
+    
+  display.setBrightness(15);
+  digitalWrite(carroverde, HIGH);  
+  digitalWrite (display, HIGH);
+  digitalWrite(pedestrevermelho, HIGH);  // Inicia com led vermelho do pedestre acesso 
    
-  start = digitalRead(botao); //Lendo a porta do botão
+  start = digitalRead(botao);            //Lendo a porta do botão
   
-  if (start == HIGH) { // Se o botão estiver ligado ...
-   
-    digitalWrite(carroverde, LOW); // Desligue verde
-     
-    digitalWrite(carroamarelo, HIGH); //Acenda o amarelo
-   delay(1000); // por 1 segundo
-   digitalWrite(carroamarelo, LOW); //depois apague
-         
-    digitalWrite(carrovermelho, HIGH); //Liga o vermelho
+  if (start == HIGH) {                   // Se o botão estiver ligado ...
+  	
+    digitalWrite(carroverde, LOW);  // Desligue verde
+  	  
+    digitalWrite(carroamarelo, HIGH);    //Acenda o amarelo
     
-    delay(2000); //Tempo de 2 segundos para acender o do pedestre
+  	digitalWrite(carroamarelo, LOW);     //depois apague
     
-    // Um FOR até 10, cada rodada vai demorar 1 segundo, 10 segundos totais
-    for(int y=0; y<10; y++){         
+    digitalWrite(display, LOW);
+  	      
+    digitalWrite(carrovermelho, HIGH);   //Liga o vermelho
+    
+	display.showNumberDec(i, false);
+
+	delay(1);
+  }
+    
+    if(start == LOW) {         
       digitalWrite(pedestrevermelho, LOW);
-      digitalWrite(pedestreverde, HIGH);
+   	  digitalWrite(pedestreverde, HIGH);
       tone (som, 440, 10000); // Sinal sonoro
-      delay(1000);
+      digitalWrite(pedestre1, HIGH);
+      delay(1);
+      digitalWrite(pedestre2, HIGH);
+      delay(1);
+      digitalWrite(pedestre3, HIGH);
+      delay(1);
+      digitalWrite(pedestre1, LOW);
+      digitalWrite(pedestre2, LOW);
+      digitalWrite(pedestre3, LOW);
     }
     
-    // Um FOR até 5, cada rodada vai demorar 1 segundo, 5 segundos totais
-    for(int x=0; x<5; x++){
+   
+    if(start == LOW){
       digitalWrite(pedestreverde,LOW);
       tone(som, 440, 500);
       digitalWrite(pedestrevermelho, HIGH);
-      delay(500);
       digitalWrite(pedestrevermelho,LOW);
-      delay(500);
-     }
+     
     
     digitalWrite(pedestrevermelho, HIGH);
-    
-    delay(3000); // Tempo entre o desligamento do sinal do pedestre para o ligamento do sinal dos carros
-    
+   
     digitalWrite(carrovermelho, LOW);
-   digitalWrite(carroverde, HIGH);
     
-    delay(15000); // Tempo que o botão vai ficar inativo até que outro pedestre acione
+  	digitalWrite(carroverde, HIGH);
+    }
   }
     
 }
