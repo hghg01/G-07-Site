@@ -42,11 +42,10 @@
             <code class="code-indent" id="cPlusPlusCode">
               //Variáveis
 
-int botao=8;    
-int ca//Variáveis
+Variáveis
 
-int botao=8;    
-int carrovermelho=13;  
+int botao=8;    
+int carrovermelho=13;  
 int carroamarelo=12;
 int carroverde=11;
 int pedestrevermelho=7;
@@ -62,90 +61,93 @@ int pedestre3=~3;
 #define D A5
 #define TM1637Display display(C, D);
 const byte digitos[10][7] = {{1,1,1,1,1,1,0},
-					   		 {0,1,1,0,0,0,0},
-					   		 {1,1,0,1,1,0,1},
-					   		 {1,1,1,1,0,0,1},
-					   		 {0,1,1,0,0,1,1},
-  					   		 {1,0,1,1,0,1,1},
-					   		 {1,0,1,1,1,1,1},
-					   		 {1,1,1,0,0,0,0},
-				       		 {1,1,1,1,1,1,1},
-					   		 {1,1,1,0,0,1,1}};
+  {0,1,1,0,0,0,0},
+  {1,1,0,1,1,0,1},
+  {1,1,1,1,0,0,1},
+  {0,1,1,0,0,1,1},
+    {1,0,1,1,0,1,1},
+  {1,0,1,1,1,1,1},
+  {1,1,1,0,0,0,0},
+      {1,1,1,1,1,1,1},
+  {1,1,1,0,0,1,1}};
 
 
 void setup(){
- //Informações dos pino no arduino
- // Iremos informar se é dado de saída (OUTPUT) ou entrada (INPUT)
-  pinMode(botao, INPUT);
-  pinMode(carrovermelho, OUTPUT);
-  pinMode(carroamarelo, OUTPUT);
-  pinMode(carroverde, OUTPUT);
-  pinMode(pedestrevermelho, OUTPUT);
-  pinMode(pedestreverde, OUTPUT);
-  pinMode(som, OUTPUT);
-  pinMode (display, OUTPUT);
+ //Informações dos pino no arduino
+ // Iremos informar se é dado de saída (OUTPUT) ou entrada (INPUT)
+  pinMode(botao, INPUT);
+  pinMode(carrovermelho, OUTPUT);
+  pinMode(carroamarelo, OUTPUT);
+  pinMode(carroverde, OUTPUT);
+  pinMode(pedestrevermelho, OUTPUT);
+  pinMode(pedestreverde, OUTPUT);
+  pinMode(som, OUTPUT);
+  pinMode (display, OUTPUT);
 }
 
 void loop(){
- 
-  for (int i = 0; i <= 9999; i++) {
-    
-  display.setBrightness(15);
-  digitalWrite(carroverde, HIGH);  
-  digitalWrite (display, HIGH);
-  digitalWrite(pedestrevermelho, HIGH);  // Inicia com led vermelho do pedestre acesso 
-   
-  start = digitalRead(botao);            //Lendo a porta do botão
-  
-  if (start == HIGH) {                   // Se o botão estiver ligado ...
-  	
-    digitalWrite(carroverde, LOW);  // Desligue verde
-  	  
-    digitalWrite(carroamarelo, HIGH);    //Acenda o amarelo
-    
-  	digitalWrite(carroamarelo, LOW);     //depois apague
-    
-    digitalWrite(display, LOW);
-  	      
-    digitalWrite(carrovermelho, HIGH);   //Liga o vermelho
-    
-	display.showNumberDec(i, false);
+ 
+  for (int i = 0; i <= 9999; i++) {
+   
+  display.setBrightness(15);
+  digitalWrite(carroverde, HIGH);  
+  digitalWrite (display, HIGH);
+  digitalWrite(pedestrevermelho, HIGH);  // Inicia com led vermelho do pedestre acesso
+   
+  start = digitalRead(botao);            //Lendo a porta do botão
+ 
+  if (start == HIGH) {                   // Se o botão estiver ligado ...
+ 
+    digitalWrite(carroverde, LOW);  // Desligue verde
+   
+    digitalWrite(carroamarelo, HIGH);    //Acenda o amarelo
+   
+  digitalWrite(carroamarelo, LOW);     //depois apague
+   
+    digitalWrite(display, LOW);
+       
+    digitalWrite(carrovermelho, HIGH);   //Liga o vermelho
+   
+display.showNumberDec(i, false);
 
-	delay(1);
-  }
-    
-    if(start == LOW) {         
-      digitalWrite(pedestrevermelho, LOW);
-   	  digitalWrite(pedestreverde, HIGH);
-      tone (som, 440, 10000); // Sinal sonoro
-      digitalWrite(pedestre1, HIGH);
-      delay(1);
-      digitalWrite(pedestre2, HIGH);
-      delay(1);
-      digitalWrite(pedestre3, HIGH);
-      delay(1);
-      digitalWrite(pedestre1, LOW);
-      digitalWrite(pedestre2, LOW);
-      digitalWrite(pedestre3, LOW);
-    }
-    
-   
-    if(start == LOW){
-      digitalWrite(pedestreverde,LOW);
-      tone(som, 440, 500);
-      digitalWrite(pedestrevermelho, HIGH);
-      digitalWrite(pedestrevermelho,LOW);
-     
-    
-    digitalWrite(pedestrevermelho, HIGH);
-   
-    digitalWrite(carrovermelho, LOW);
-    
-  	digitalWrite(carroverde, HIGH);
-    }
-  }
-    
+delay(1);
+  }
+   
+    if(start == LOW) {        
+      digitalWrite(pedestrevermelho, LOW);
+     digitalWrite(pedestreverde, HIGH);
+      tone (som, 440, 10000); // Sinal sonoro
+      digitalWrite(pedestre1, HIGH);
+      delay(1);
+      digitalWrite(pedestre2, HIGH);
+      delay(1);
+      digitalWrite(pedestre3, HIGH);
+      delay(1);
+      digitalWrite(pedestre1, LOW);
+      digitalWrite(pedestre2, LOW);
+      digitalWrite(pedestre3, LOW);
+    }
+   
+   
+    if(start == LOW){
+      digitalWrite(pedestreverde,LOW);
+      tone(som, 440, 500);
+      digitalWrite(pedestrevermelho, HIGH);
+      digitalWrite(pedestrevermelho,LOW);
+     
+   
+    digitalWrite(pedestrevermelho, HIGH);
+   
+    digitalWrite(carrovermelho, LOW);
+   
+  digitalWrite(carroverde, HIGH);
+    }
+  }
+   
 }
+
+
+
             </code>
 
           </pre>
