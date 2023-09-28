@@ -41,7 +41,7 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) {
 
 
     
-onst elts = {
+const elts = {
 	text1: document.getElementById("text1"),
 	text2: document.getElementById("text2")
 };
