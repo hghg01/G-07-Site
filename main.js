@@ -131,7 +131,7 @@ function animate() {
 animate();
 
 
-var NUM_PARTICLES = ( ( ROWS = 100 ) * ( COLS = 300 ) ),
+var NUM_PARTICLES = ( ( ROWS = 300 ) * ( COLS = 600 ) ),
     THICKNESS = Math.pow( 80, 2 ),
     SPACING = 3,
     MARGIN = 100,
