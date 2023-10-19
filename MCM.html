@@ -40,16 +40,24 @@
 <p>Resultado: </p>
   
 <p> Soma <Span id="Soma"> </p>
-
+    
   
-function calcular() {
-  var n1 = parseInt(document.getElementById('n1').value, 10);
-  var n2 = parseInt(document.getElementById('n2').value, 10);
-  document.getElementById('resultado').innerHTML = n1 + n2;
-}
-<form action="" method="post">
-  N1: <input type="text" id="n1" value="10" /> <br> N2: <input type="text" id="n2" value="5" onblur="calcular()" /> <br>
-</form>
+  <script>
+    function multiplyBy()
+    {
+      num1 = document.getElementById(
+        "firstNumber").value;
+      num2 = document.getElementById(
+        "secondNumber").value;
+      document.getElementById(
+        "result").innerHTML = num1 * num2;
+    }
+
+      document.write("Adição        = ", soma, "<br>");
+    document.write("Subtração     = ", sub, "<br>");
+    document.write("Multiplicação = ", mult, "<br>");
+    document.write("Divisão       = ", div);
+  </script>
 
 <div id="resultado"></div>
   
@@ -64,6 +72,7 @@ function calcular() {
 </body>
 
 </html>
+
 <script type="text/javascript">
     var num1 = prompt("Primeiro numero: ");
     num1 = parseInt(num1);
