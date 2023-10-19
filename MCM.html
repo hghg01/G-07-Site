@@ -1,1 +1,73 @@
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Estilo de Site</title>
+    <link rel="stylesheet" href="G-07_2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&amp;display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+<body>
+    <header class="cabeçalho">
+        <img class="cabeçalho-imagem" src="g-cep.png" alt="Logo do CEP">
+        <p class="texto-cabecalho">Estilo de site</p>
+        <ul class="cabeçalho-lista">
+            <li class="cabeçalho-lista-item"> <a href="#corpo">Sobre o site</a> </li>
+            <li class="cabeçalho-lista-item"> <a href="#quem-somos">Sobre nós</a> </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Disciplinas</a>
+                <div class="dropdown-content">
+                    <a href="G-07-Trabbiotec.html">Biotecnologia</a>
+                    <a href="G-07-TrabHis">História</a>
+                    <a href="G-07-TrabRobo.html">Física I</a>
+                    <a href="G-07-trabempreende.html">Matemática 2</a>
+                     <a href="teste.html">Programaçao</a>
+                       <a href="MCM.html">MATÉMATICA</a>'
+                    
+                    
+                </div>
+            </li>       
+        </ul>
+    </header>
+    <input id="Entrada 1"> </input>
+  
 
+  <input id="Entrada 2"> </input>
+
+<p>Resultado: </p>
+  
+<p> Soma <Span id="Soma"> </p>
+
+  
+<script type="text/javascript">
+    var num1 = prompt("Primeiro numero: ");
+    num1 = parseInt(num1);
+
+    var num2 = prompt("Segundo  numero: ");
+    num2 = parseInt(num2);
+
+    var soma = num1+num2;
+    var sub  = num1-num2;
+    var mult = num1 * num2;
+    var div  = num1/num2;
+    document.write("Adição        = ", soma, "<br>");
+    document.write("Subtração     = ", sub, "<br>");
+    document.write("Multiplicação = ", mult, "<br>");
+    document.write("Divisão       = ", div);
+   </script>
+
+  
+    <footer class="roda-pé">
+        <p class="fim"> Trabalho desenvolvido na disciplina de programação </p>
+        <div class="meio">
+            <img class="roda-pé-imagem" src="g-cep.png" alt="Logo">
+            <span></span>
+            <p class="roda-pé-texto">Colégio Estadual do Paraná</p>
+        </div>
+    </footer>
+</body>
+
+</html>
