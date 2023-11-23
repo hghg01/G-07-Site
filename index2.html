@@ -96,19 +96,46 @@
         <div class="lado">
             <div class="lado_1">
                 <div class="field">
-                    <label for="nome" class="contato__texto">Seu nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
-                </div>
-                <div class="field">
-                    <label for="email" class="contato__texto">Seu E-Mail:</label>
-                    <input type="email" id="email" name="email" placeholder="Digite seu E-Mail*" required>
-                </div>
-            </div>
-            <div class="field">
-                <div class="lado_2">
-                    <label for="mensagem" class="contato__texto">Sua mensagem:</label>
-                    <textarea name="mensagem" id="mensagem" placeholder="Mensagem*" required
-                        class="mensagem"></textarea>
+                  <form id="form">
+  <label for="firstname"> First Name* </label>
+  <input type="text" name="firstname" id="firstname" />
+  <button id="submit">Submit</button>
+
+  <span role="alert" id="nameError" aria-hidden="true">
+    Please enter First Name
+  </span>
+</form>
+const submit = document.getElementById("submit");
+
+submit.addEventListener("click", validate);
+
+function validate(e) {
+  e.preventDefault();
+
+  const firstNameField = document.getElementById("firstname");
+  let valid = true;
+
+  if (!firstNameField.value) {
+    const nameError = document.getElementById("nameError");
+    nameError.classList.add("visible");
+    firstNameField.classList.add("invalid");
+    nameError.setAttribute("aria-hidden", false);
+    nameError.setAttribute("aria-invalid", true);
+  }
+  return valid;
+}
+#nameError {
+  display: none;
+  font-size: 0.8em;
+}
+
+#nameError.visible {
+  display: block;
+}
+
+input.invalid {
+  border-color: red;
+}
                 </div>
             </div>
         </div>
