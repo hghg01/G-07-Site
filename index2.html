@@ -91,58 +91,7 @@
               <div class="gcse-search"><script async src="https://cse.google.com/cse.js?cx=f6c4c4d5a43414706"></div>
            
     </section>
-    <form class="formulario" method="post" action="https://formspree.io/f/myyaazro">
-        <p class="contato__texto"> Em caso de dúvidas, envie uma mensagem preenchendo o formulário abaixo.</p>
-        <div class="lado">
-            <div class="lado_1">
-                <div class="field">
-                  <form id="form">
-  <label for="firstname"> First Name* </label>
-  <input type="text" name="firstname" id="firstname" />
-  <button id="submit">Submit</button>
-
-  <span role="alert" id="nameError" aria-hidden="true">
-    Please enter First Name
-  </span>
-</form>
-const submit = document.getElementById("submit");
-
-submit.addEventListener("click", validate);
-
-function validate(e) {
-  e.preventDefault();
-
-  const firstNameField = document.getElementById("firstname");
-  let valid = true;
-
-  if (!firstNameField.value) {
-    const nameError = document.getElementById("nameError");
-    nameError.classList.add("visible");
-    firstNameField.classList.add("invalid");
-    nameError.setAttribute("aria-hidden", false);
-    nameError.setAttribute("aria-invalid", true);
-  }
-  return valid;
-}
-#nameError {
-  display: none;
-  font-size: 0.8em;
-}
-
-#nameError.visible {
-  display: block;
-}
-
-input.invalid {
-  border-color: red;
-}
-                </div>
-            </div>
-        </div>
-  
-        
-        <input type="submit" name="acao" value="Enviar">
-    </form>
+   
     <footer class="roda-pé">
         <p class="fim"> Trabalho desenvolvido na disciplina de programação </p>
         <div class="meio">
